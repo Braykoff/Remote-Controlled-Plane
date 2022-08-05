@@ -1,0 +1,62 @@
+/* Body */
+html, body {
+	background: black;
+	font-family: 'Courier New', monospace;
+	overflow: hidden;
+	font-size: 16px;
+}
+.noSelect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+		-ms-user-select: none;
+			user-select: none;
+}
+/* Topbar */
+#topbar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 20px;
+	background: lightgray;
+	color: black;
+	font-family: Helvetica, sans-serif;
+	padding: 3px;
+}
+#topbar .count {
+	font-weight: 900;
+}
+/* Stop Button */
+#stop {
+	color: red;
+}
+/* Log */
+#log {
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	top: 29px;
+	bottom: 3px;
+	overflow: scroll;
+	color: white;
+}
+#log * {
+	border-bottom: 1px solid rgb(50, 50, 50);
+	max-height: 95px;
+	overflow-y: scroll;
+}
+#log .message {
+	color: white;
+}
+#log .warning {
+	color: yellow;
+}
+#log .error {
+	color: red;
+}
+#log .local {
+	color: cyan;
+}
+

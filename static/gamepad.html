@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RC Plane Controller</title>
+<link rel="stylesheet" href="/resource/gamepad.css">
+</head>
+<body>
+
+<div id="streamChooser">
+<select id="streamDropdown">
+{{streams}}
+</select>
+</div>
+
+<img id="feed" src="{{defaultStream}}" alt="Video feed failed to load">
+
+<span class="status" id="connectedGamepad">Waiting For Controller...</span>
+<span class="status" id="latency">(Avg) Latency: ?ms</span>
+
+<script src="/resource/gamepad.js"></script>
+
+</body>
+</html>
+

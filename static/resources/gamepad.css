@@ -1,0 +1,50 @@
+/* Body */
+html, body {
+	background: black;
+	color: white;
+	font-family: Helvetica, sans-serif;
+	overflow: hidden;
+}
+/* Video Stream Chooser */
+#streamChooser {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 2;
+	opacity: 0.4;
+	transition: .3s opacity;
+	width: min(500px, 50%);
+}
+#streamDropdown {
+	outline: none;
+}
+/* Video Stream */
+#feed {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	object-fit: contain;
+	width: 100%;
+	height: calc(100% - 30px);
+}
+/* Connected Gamepad and Latency Fields */
+.status {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	height: 24px;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#connectedGamepad {
+	left: 1px;
+	width: calc(100% - 183px);
+}
+#latency {
+	right: 1px;
+	width: 180px;
+}
